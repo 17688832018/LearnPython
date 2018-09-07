@@ -1,4 +1,4 @@
-# 正式编写步骤:
+﻿# 正式编写步骤:
     1.配置url
     2.models
     3.模板
@@ -17,8 +17,6 @@ deactivate
 python manage.py runserver
 # 进入shell
 python manage.py shell /也可在console调试
-# admin账号密码
-账号:myuser
-密码:qQ123456
+
 # 创建搜索的索引文件:
 python manage.py rebuild_index

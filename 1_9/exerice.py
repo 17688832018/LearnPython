@@ -46,14 +46,14 @@ def getInput(initHeight,count,bounce):
     return d
 
 # 3.
-h=float(input("high"))
-t=float(input("times"))
-s,b=0,1
-while b<t:
-    a=h+0.6*h
-    h,b=0.6*h,b+1
-    s=s+a
-print(s)
+# h=float(input("high"))
+# t=float(input("times"))
+# s,b=0,1
+# while b<t:
+#     a=h+0.6*h
+#     h,b=0.6*h,b+1
+#     s=s+a
+# print(s)
 # 4.
 def getPi(count):
     c = int(input(count))
@@ -69,7 +69,28 @@ def getPi(count):
 
     print("实际结果为:",math.pi/4)
     return pi4
+# 6 读文件
+def getSalary(fileName):
+    inputFile = input(fileName)
+    salaryFile = open(inputFile,"r")
+    text = salaryFile.read()
+    sum = 0
+    line = salaryFile.readline()  # 调用文件的 readline()方法
+    while line:
+        print(line)  # 后面跟 ',' 将忽略换行符
+        # print(line, end = '')　　　# 在 Python 3中使用
+        line = salaryFile.readline()
 
+        # for line in text:
+        # linelist = line.split(" ")
+        # print(linelist)
+        # for words in linelist:
+        #     wordlist = words.split(" ")
+            # print(wordlist)
+            # for word in wordlist:
+            #     number = int(word)
+            # sum = wordlist[1] * wordlist[2]
+            #     print(number)
 
 
 def main():
@@ -82,9 +103,11 @@ def main():
     # test2 =getInput("输入初始高度","输入次数","输入弹性指数")
     # print("距离为:",test2)
     # 4.
-    test4 = getPi("输入迭代次数")
-    print("结果为:",test4)
-
+    # test4 = getPi("输入迭代次数")
+    # print("结果为:",test4)
+    # 6.读某个文件
+    test6=getSalary("输入要读取的文件名")
+    print(test6)
 
 
 

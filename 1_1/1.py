@@ -200,6 +200,7 @@ def main():
     f6 = open("integers2.txt",'r')
     sum = 0
     for line in f6:
+        # 以每个字符分割
         wordlist =line.split()
         for word in wordlist:
             number = int(word)
@@ -229,8 +230,30 @@ def main():
             fileObj2.close()
             break
     print(lyst2)
-
-
+    # 列表
+    message = "aaa1233"
+    message2 = "aaa1233"
+    a1 = "123"
+    a2 =123
+    a3 =123
+    a4 =a2
+    list2 = list(message)
+    print(list2)
+    list3 = list(range(1,20,2))
+    print(list3)
+    # is 和 ==  is判断是否是同一个对象，==判断类型和值
+    # 浅复制
+    list4 = list(list3)
+    print(list4 is list3)   # False
+    print(list4 == list3)   # True
+    print(message is message2)  # True
+    print(a1 == a2)  # False
+    print(a2 is a3)  # True
+    print(a2 is a4)  # True
+    print(dir(str))
+    print(help(str))
+    import time
+    print(time.time()/3600/24/365)
 
 if __name__ == '__main__':
     main()

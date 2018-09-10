@@ -1,5 +1,5 @@
 #!-*-coding:utf-8 -*-
-"""类的结构和理解"""
+"""计数器 类的结构和理解"""
 class Counter(object):
     # Counter对象(类对象)的数量
     instance = 0

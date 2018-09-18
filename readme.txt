@@ -20,3 +20,7 @@ python manage.py shell /也可在console调试
 
 # 创建搜索的索引文件:
 python manage.py rebuild_index
+# 打开mongoDB服务  mongodb数据库bin目录下
+./mongod
+# shell端运行mongoDB
+./mongo

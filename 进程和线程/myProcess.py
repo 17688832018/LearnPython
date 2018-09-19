@@ -14,6 +14,8 @@ linux系统:
 # subprocess模块可以让我们非常方便地启动一个子进程，然后控制其输入和输出。
 import os,time,random,subprocess
 from multiprocessing import Process,Pool,Queue
+# multiprocess模块下的Queue方法常用于 一个父进程和他的子进程相互之间的通信 各子进程共有
+# 直接import queue 这个模块 用于多个进程之间的通信 各自私有
 
 # # os.fork()创建进程
 # print("Process (%s) start..." % os.getpid())
